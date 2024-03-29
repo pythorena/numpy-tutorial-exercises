@@ -1,4 +1,5 @@
 import os, pytest, re
+import numpy as np
 
 @pytest.mark.it("Import Numpy as np on the app.py file")
 def test_declare_variable():
@@ -7,3 +8,4 @@ def test_declare_variable():
         content = content_file.read()
         regex = re.compile(r"import\s+numpy\s+as\s+np")
         assert bool(regex.search(content)) == True
+

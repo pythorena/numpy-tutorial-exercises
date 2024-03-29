@@ -12,3 +12,4 @@ def test_print(capsys):
     import app
     captured = capsys.readouterr()
     assert captured.out == '[0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]\n'
+
